@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--<body>-->
+<!--bài 1-->
+<!--    <p style="color: red">Chuyển từ độ C sang độ F</p>-->
+<!--    <p>độ C <input type="number" id="doc"></p>-->
+<!--    <p>độ F <input type="number" id="dof" disabled></p>-->
+<!--    <p><input type="button" onclick="csangf()" value="click me bài 1"></p>-->
+<!--    <script>-->
+<!--    function csangf() {-->
+<!--        let a=document.getElementById("doc").value;-->
+<!--        let b=(a*9)/5+32;-->
+<!--        document.getElementById("dof").value=b;-->
+<!--    }-->
+<!--    </script>-->
+<!--</body>-->
+
+<!--<body>-->
+<!--bài 2-->
+<!--    <p style="color: red">chuyển từ mét sang feet</p>-->
+<!--    <p>mét <input type="number" id="met"></p>-->
+<!--    <p>feet <input type="number" id="feet" disabled></p>-->
+<!--    <p><input type="button" onclick="metsangfeet()" value="click me bài 2"></p>-->
+<!--    <script>-->
+<!--        function metsangfeet() {-->
+<!--            let c=document.getElementById("met").value;-->
+<!--            let d=c*3.2808;-->
+<!--            document.getElementById("feet").value=d;-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+
+<!--<body>-->
+<!--bài 3-->
+<!--    <p style="color: red">diện tích hình vuông</p>-->
+<!--    <p>cạnh HV <input type="number" id="canhhv"></p>-->
+<!--    <p>diện tích <input type="number" id="dientichhv" disabled></p>-->
+<!--    <p><input type="button" onclick="tinh()" value="click me bài 3"></p>-->
+<!--    <script>-->
+<!--        function tinh() {-->
+<!--            let e=document.getElementById("canhhv").value;-->
+<!--            let f=e*e;-->
+<!--            document.getElementById("dientichhv").value=f;-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+
+<!--<body>-->
+<!--bài 4-->
+<!--    <p style="color: red">diện tích hình chữ nhật</p>-->
+<!--    <p>cạnh a <input type="number" id="canha"></p>-->
+<!--    <p>cạnh b <input type="number" id="canhb"></p>-->
+<!--    <p>diện tích <input type="number" id="dientichhcn" disabled></p>-->
+<!--    <p><input type="button" onclick="dientichhinhchunhat()" value="click me bài 4"></p>-->
+<!--    <script>-->
+<!--        function dientichhinhchunhat() {-->
+<!--            let g=document.getElementById("canha").value;-->
+<!--            let h=document.getElementById("canhb").value;-->
+<!--            let i=g*h;-->
+<!--            document.getElementById("dientichhcn").value=i;-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+
+<!--<body>-->
+<!--bài 5-->
+<!--    <p style="color: red">diện tích tam giác vuông</p>-->
+<!--    <p>cạnh a <input type="number" id="canhke1"></p>-->
+<!--    <p>cạnh b <input type="number" id="canhke2"></p>-->
+<!--    <p>diện tích <input type="number" id="dientichtamgiac" disabled></p>-->
+<!--    <p><input type="button" onclick="dientichtamgiac()" value="click me bài 5"></p>-->
+<!--    <script>-->
+<!--        function dientichtamgiac() {-->
+<!--            let j = document.getElementById("canhke1").value;-->
+<!--            let k = document.getElementById("canhke2").value;-->
+<!--            let l = 1 / 2 * (j * k);-->
+<!--            document.getElementById("dientichtamgiac").value = l;-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+
+<!--<body>-->
+<!--bài 6-->
+<!--    <p style="color: red">phương trình bậc 1</p>-->
+<!--    <p>nhập a <input type="number" id="nhapa"></p>-->
+<!--    <p>nhập b <input type="number" id="nhapb"></p>-->
+<!--    <p>kết quả <input type="text" id="kqbac1" disabled></p>-->
+<!--    <p><input type="button" onclick="ketquabac1()" value="click me bài 6"></p>-->
+<!--    <script>-->
+<!--        function ketquabac1() {-->
+<!--            let m=document.getElementById("nhapa").value;-->
+<!--            let n=document.getElementById("nhapb").value;-->
+<!--            if (m==0){-->
+<!--                if (n==0){-->
+<!--                    document.getElementById("kqbac1").value="phương trình vô số nghiệm";-->
+<!--                }else {-->
+<!--                    document.getElementById("kqbac1").value="phương trình vô nghiệm";-->
+<!--                }-->
+<!--            }else {-->
+<!--                document.getElementById("kqbac1").value=-n/m;-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+
+<body>
+<!--bài 7-->
+<!--    <p style="color: red"> phương trình bậc 2</p>-->
+<!--    <p>nhập a <input type="number" id="nhapa1"></p>-->
+<!--    <p>nhập b <input type="number" id="nhapb1"></p>-->
+<!--    <p>nhập c <input type="number" id="nhapc"></p>-->
+<!--    <p>kết quả <input type="text" id="kqb2" disabled></p>-->
+<!--    <p><input type="button" onclick="ketquabac2()" value="click me bài 7"></p>-->
+<!--    <script>-->
+<!--        function ketquabac2() {-->
+<!--            let o = document.getElementById("nhapa1").value; a-->
+<!--            let p = document.getElementById("nhapb1").value; b-->
+<!--            let q = document.getElementById("nhapc").value; c-->
+<!--            let delta = p * p - 4 * o * q;-->
+<!--             x1=(-p)+(Math.sqrt(delta))/(2*o);-->
+<!--             x2=(-p)-(Math.sqrt(delta))/(2*o);-->
+<!--             x3=-p/(2*o);-->
+<!--             x4=-q/p;-->
+<!--             trường hợp a khác 0-->
+<!--            if (delta<0) {-->
+<!--                document.getElementById("kqb2").value="phương trình vô nghiệm";-->
+<!--            } else if (delta>0) {-->
+<!--                document.getElementById("kqb2").value="x1="+x1 + " , " + "x2="+x2;-->
+<!--            } else {-->
+<!--                document.getElementById("kqb2").value="x1=x2="+x3;-->
+<!--            }-->
+<!--             trường hợp-->
+<!--            if (o==0) {   a==0-->
+<!--                if (p==0) {-->
+<!--                    if (q==0) {-->
+<!--                        document.getElementById("kqb2").value="phương trình vô số nghiệm"-->
+<!--                    } else {-->
+<!--                        document.getElementById("kqb2").value="x1=0" +" , " + "x2="+(-p/o);-->
+<!--                    }-->
+<!--                } else-->
+<!--                {-->
+<!--                    document.getElementById("kqb2").value="x="+ Math.sqrt(-q/o);-->
+<!--                }-->
+<!--                     else if ((-q/o)<0){-->
+<!--                     document.getElementById("kqb2").value="x="+ - Math.sqrt(-q/o);-->
+<!--                 }-->
+<!--            }-->
+<!--            else-->
+<!--            {-->
+<!--                document.getElementById("kqb2").value=x4;-->
+<!--            }-->
+<!--        }
+</script>-->
+
+
+<!--        <script>-->
+<!--            let a=parseInt(prompt("enter age"));-->
+<!--            if (a<120&&a>0)-->
+<!--            {-->
+<!--                a=document.write("độ tuổi chính xác");-->
+<!--            }-->
+<!--            else-->
+<!--            {-->
+<!--                a=document.write("độ tuổi không chính xác");-->
+<!--            }-->
+<!--        </script>-->
+
+
+<!--<script>-->
+<!--    bài 9-->
+<!--    let a=prompt("cạnh a");-->
+<!--    let b=prompt("cạnh b");-->
+<!--    let c=prompt("cạnh c");-->
+<!--    if (a>0&&b>0&&c>0)-->
+<!--    {-->
+<!--        document.write("a,b,c >0 là tam giác");-->
+<!--    }else if (a+b>c)-->
+<!--    {-->
+<!--        document.write("a+b>c là tam giác");-->
+<!--    }else  if (b+c>a)-->
+<!--    {-->
+<!--        document.write("b+c>a là tam giác");-->
+<!--    }else if (a+c>b)-->
+<!--    {-->
+<!--        document.write("a+c>b là tam giác");-->
+<!--    }-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    //bài 10-->
+<!--    let a=prompt("enter your living electricity number");-->
+<!--    if (a<50)-->
+<!--    {-->
+<!--        a=a*1.678;-->
+<!--    }-->
+<!--    else if (a<100 && a>51)-->
+<!--    {-->
+<!--        a=a*1.734;-->
+<!--    }-->
+<!--    else if (a>101 && a<200)-->
+<!--    {-->
+<!--        a=a*2.014;-->
+<!--    }-->
+<!--    else if (a>201 && a<300)-->
+<!--    {-->
+<!--        a=a*2.536;-->
+<!--    }-->
+<!--    else if (a>301 && a<400)-->
+<!--    {-->
+<!--        a=a*2.834;-->
+<!--    }-->
+<!--    else-->
+<!--    {-->
+<!--        a=a*2.927;-->
+<!--    }-->
+<!--    alert(a);-->
+<!--</script>-->
+
+<script>
+    //bai 11
+
+    let a=prompt("enter money");
+    if (a<5)
+    {
+        a=a-(a*5)/100;
+    }
+    else if (a>5 && a<10)
+    {
+        a=a-(a*10)/100-2.5;
+    }
+    else if (a>10 && a<18)
+    {
+        a=a-(a*15)/100-7.5;
+    }
+    else if (a>18 && a<32)
+    {
+        a=a-(a*20)/100-16.5;
+    }
+    else if (a>32 && a<60)
+    {
+        a=a-(a*30)/100-30.5;
+    }
+    else
+    {
+        a=a-(a*50)/100-60;
+    }
+    alert(a);
+
+</script>
+</body>
+</html>
